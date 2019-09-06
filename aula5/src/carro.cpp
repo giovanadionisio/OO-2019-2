@@ -1,12 +1,14 @@
 #include "carro.hpp"
 
 Carro::Carro(){
-    ano = 2010;
-    modelo = "Utilitario";
-    
-    setVelocidadeAtual(0.0);
-    setVelocidadeMax(220.0);
-    
+    marca = "null";
+    ano = 0000;
+    modelo = "null";
+    capacidade = 1;
+    cor = "null";
+    preco = 0.0;
+    velocidadeMax= 0.0;
+    velocidadeAtual = 0.0;
     cout << "Criou o carro" << endl;
 }
 

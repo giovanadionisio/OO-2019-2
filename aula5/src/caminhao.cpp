@@ -1,15 +1,12 @@
 #include "caminhao.hpp"
 
 
-Caminhao::Caminhao(string marca)
-{
+Caminhao::Caminhao(){
     carga = 0.0;
     comprimento = 0.0;
     altura = 0.0;
-    setVelocidadeMax(180.0);
+    tipoCarga = "null";
     cout << "Construtor do caminhao" << endl;
-    cout << "Caminhão " << marca;
-
 }
 
 //Carga

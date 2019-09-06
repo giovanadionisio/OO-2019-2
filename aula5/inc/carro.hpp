@@ -4,14 +4,14 @@ using namespace std;
 
 class Carro{
     private:
-        string marca;//
-        int ano;//
-        string modelo;//
-        int capacidade;//
-        string cor;//
+        string marca;
+        int ano;
+        string modelo;
+        int capacidade;
+        string cor;
         float preco;
-        float velocidadeMax;//
-        float velocidadeAtual;//
+        float velocidadeMax;
+        float velocidadeAtual;
     public:
         Carro();
         Carro(float velocidadeMaxima);

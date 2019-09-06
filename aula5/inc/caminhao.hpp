@@ -5,12 +5,12 @@
 
 class Caminhao : public Carro{
     private:
-        float carga;//
+        float carga;
         float comprimento;
         float altura;
         string tipoCarga;
     public:
-        Caminhao(string marca);
+        Caminhao();
         Caminhao(float _velocidadeMaxima, string marca);
         void setTipoCarga(string tipocarga);
         string getTipoCarga();
