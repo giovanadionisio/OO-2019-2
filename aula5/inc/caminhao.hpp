@@ -9,6 +9,11 @@ class Caminhao : public Carro{
         float comprimento;
         float altura;
         string tipoCarga;
+        float gasolinaGasta;
+        string cidadeInicial;
+        string cidadeFinal;
+        float kmPorLitro;
+        float km;
     public:
         Caminhao();
         Caminhao(float _velocidadeMaxima, string marca);
@@ -20,6 +25,13 @@ class Caminhao : public Carro{
         void setComprimento(float comprimento);
         float getAltura();
         void setAltura(float altura);
+        void descarregar ();
+        void carregar (float carga);
+        void setRota(string cidadeInicial, string cidadeFinal);
+        void setRota(float km, float velocidade);
+        string getRotaInicial();
+        string getRotaFinal();
+        void imprimeDados();
 };
 
 #endif

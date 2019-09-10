@@ -1,6 +1,5 @@
 #include "caminhao.hpp"
 
-
 Caminhao::Caminhao(){
     carga = 0.0;
     comprimento = 0.0;
@@ -43,4 +42,26 @@ string Caminhao::getTipoCarga(){
 
 void Caminhao::setTipoCarga(string tipoCarga){
     this->tipoCarga = tipoCarga;
+}
+
+//SetRota
+void Caminhao::setRota(string cidadeInicial, string cidadeFinal)
+{
+    this->cidadeInicial = cidadeInicial;
+    this->cidadeFinal = cidadeFinal;
+    // metodoX distancia 
+    gasolinaGasta = km/kmPorLitro;
+}
+
+void Caminhao::setRota(float km, float velocidade)
+{
+    gasolinaGasta = (velocidade/100.0)*km/kmPorLitro;
+}
+
+//Imprime dados
+void Caminhao::imprimeDados()
+{
+    cout << "Carga " << this->carga << endl;
+    cout << "altura " << this->altura << endl;
+    cout << "comprimento " << this->comprimento << endl;
 }
