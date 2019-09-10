@@ -36,7 +36,8 @@ int main(){
     meu_caminhao->setCapacidade(2);
     cout <<"Caminhao Mercedes: "<<endl;
     cout << "Capacidade do caminhao " << meu_caminhao->getCapacidade()<< endl;
-    
+    meu_caminhao->imprimeDados();
+
     delete carro2;
 
  return 0;
