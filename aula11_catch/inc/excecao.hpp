@@ -7,7 +7,12 @@
 using namespace std;
 
 class Excecao : public exception {
-
+    private:
+        Excecao();
+        const char* mensagem;
+    public:
+        const char* what();
+        Excecao(const char *mensagem):mensagem(mensagem){};
 
 };
 
