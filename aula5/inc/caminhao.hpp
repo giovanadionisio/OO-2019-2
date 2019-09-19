@@ -19,7 +19,7 @@ class Caminhao : public Carro{
         Caminhao(float _velocidadeMaxima, string marca);
         void setTipoCarga(string tipocarga);
         string getTipoCarga();
-        float getCarga();
+        float getCarga() const;
         void setCarga(float carga);
         float getComprimento();
         void setComprimento(float comprimento);
@@ -31,7 +31,7 @@ class Caminhao : public Carro{
         void setRota(float km, float velocidade);
         string getRotaInicial();
         string getRotaFinal();
-        void imprimeDados();
+        virtual void imprimeDados();
 };
 
 #endif

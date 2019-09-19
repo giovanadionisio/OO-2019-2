@@ -93,3 +93,12 @@ float Carro::getPreco(){
 void Carro::setPreco(float preco){
     this->preco = preco;
 }
+
+//Imprime Dados
+void Carro::imprimeDados(){
+    cout << "Imprime carro: " << endl;
+    cout << "Ano " << this->ano << endl;
+    cout << "Marca " << this->marca << endl;
+    cout << "Modelo " << this->modelo << endl;
+    cout << "Preco " << this->preco << endl;
+}

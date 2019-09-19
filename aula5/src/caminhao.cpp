@@ -9,7 +9,7 @@ Caminhao::Caminhao(){
 }
 
 //Carga
-float Caminhao::getCarga(){
+float Caminhao::getCarga() const{
     return this-> carga;
 }
 
@@ -44,8 +44,8 @@ void Caminhao::setTipoCarga(string tipoCarga){
     this->tipoCarga = tipoCarga;
 }
 
-//SetRota
-void Caminhao::setRota(string cidadeInicial, string cidadeFinal)
+//Rota
+void Caminhao::setRota(const string cidadeInicial, string cidadeFinal)
 {
     this->cidadeInicial = cidadeInicial;
     this->cidadeFinal = cidadeFinal;
@@ -61,6 +61,7 @@ void Caminhao::setRota(float km, float velocidade)
 //Imprime dados
 void Caminhao::imprimeDados()
 {
+    cout << "Imprime caminhao: " << endl;;
     cout << "Carga " << this->carga << endl;
     cout << "altura " << this->altura << endl;
     cout << "comprimento " << this->comprimento << endl;

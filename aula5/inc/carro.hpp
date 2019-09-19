@@ -34,4 +34,5 @@ class Carro{
         void setCor(string cor);
         float getPreco();
         void setPreco(float preco);
+        virtual void imprimeDados();
 };

@@ -3,6 +3,9 @@
 #include "caminhao.hpp"
 
 using namespace std;
+void funcImprime(Caminhao *caminhao){
+    caminhao->imprimeDados();
+}
 int main(){
     Carro meu_carro;
     Carro meu_carro2;
@@ -37,7 +40,8 @@ int main(){
     cout <<"Caminhao Mercedes: "<<endl;
     cout << "Capacidade do caminhao " << meu_caminhao->getCapacidade()<< endl;
     meu_caminhao->imprimeDados();
-
+    funcImprime(meu_caminhao);
+    
     delete carro2;
 
  return 0;

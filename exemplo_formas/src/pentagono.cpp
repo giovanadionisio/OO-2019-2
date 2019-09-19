@@ -13,7 +13,7 @@ Pentagono::Pentagono(float lado, float apotema){
 float Pentagono::CalculaArea(){
     float area;
 
-    area = (CalulaPerimetro() * getAltura())/2.0;
+    area = (CalculaPerimetro() * getAltura())/2.0;
     return area;
 }
 
@@ -21,4 +21,5 @@ float Pentagono::CalculaPerimetro(){
     float perimetro;
 
     perimetro = 5 * getBase();
+    return perimetro;
 }
